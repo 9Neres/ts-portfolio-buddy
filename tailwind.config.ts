@@ -57,6 +57,17 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        // Portfolio Custom Colors
+        portfolio: {
+          dark: "hsl(var(--portfolio-dark))",
+          darker: "hsl(var(--portfolio-darker))",
+          card: "hsl(var(--portfolio-card))",
+          "card-hover": "hsl(var(--portfolio-card-hover))",
+          green: "hsl(var(--portfolio-green))",
+          "green-dark": "hsl(var(--portfolio-green-dark))",
+          text: "hsl(var(--portfolio-text))",
+          "text-muted": "hsl(var(--portfolio-text-muted))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
