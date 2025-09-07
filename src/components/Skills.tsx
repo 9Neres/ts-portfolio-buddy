@@ -3,41 +3,46 @@ import { Badge } from "@/components/ui/badge";
 const Skills = () => {
   const skillCategories = [
     {
-      title: "Frontend Development",
-      skills: ["React", "TypeScript", "Next.js", "Tailwind CSS", "JavaScript", "HTML5", "CSS3"]
+      title: "Linguagens & Frameworks",
+      skills: ["Java", "Spring Boot", "JPA", "Hibernate", "JavaScript", "TypeScript", "React", "HTML5", "CSS3"]
     },
     {
-      title: "Backend Development", 
-      skills: ["Node.js", "Express", "Python", "PostgreSQL", "MongoDB", "REST APIs", "GraphQL"]
+      title: "Banco de Dados & APIs", 
+      skills: ["SQL", "NoSQL", "PostgreSQL", "Toad for Oracle", "DBeaver", "REST APIs", "Maven"]
     },
     {
-      title: "DevOps & Tools",
-      skills: ["Git", "Docker", "AWS", "Vercel", "Figma", "VS Code", "Linux"]
+      title: "DevOps & Ferramentas",
+      skills: ["Git", "GitHub", "Docker", "Jenkins", "Insomnia", "Postman", "Jira", "Miro"]
     },
     {
-      title: "Certificações",
-      skills: ["AWS Cloud Practitioner", "React Developer", "Full Stack Expert", "Agile Methodology"]
+      title: "Design & Produtividade",
+      skills: ["Figma", "Canvas", "Excel", "Word", "Sheets", "Docs", "Asana"]
+    },
+    {
+      title: "Especialidades",
+      skills: ["Backend", "Frontend", "Full-Stack", "Discord Bots", "Cloud Computing", "English A2", "Portuguese"]
     }
   ];
 
   return (
-    <section id="habilidades" className="py-20 bg-portfolio-darker">
-      <div className="container mx-auto px-4">
+    <section id="habilidades" className="py-20 bg-portfolio-darker relative">
+      <div className="absolute inset-0 bg-gradient-to-br from-portfolio-dark/50 to-portfolio-darker"></div>
+      <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-portfolio-text mb-4">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-portfolio-text mb-4 tracking-tight">
             Habilidades & 
-            <span className="text-portfolio-green"> Certificações</span>
+            <span className="text-portfolio-green"> Tecnologias</span>
           </h2>
           <p className="text-lg text-portfolio-text-muted max-w-2xl mx-auto">
-            Tecnologias e ferramentas que domino para criar soluções completas e eficientes
+            Stack tecnológico e ferramentas utilizadas para desenvolvimento de soluções back-end robustas
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {skillCategories.map((category, index) => (
             <div
               key={category.title}
-              className="bg-portfolio-card hover:bg-portfolio-card-hover rounded-2xl p-6 transition-all duration-300 transform hover:scale-105 hover:shadow-lg border border-portfolio-card"
+              className="bg-portfolio-card/60 backdrop-blur-sm hover:bg-portfolio-card/80 rounded-2xl p-6 transition-all duration-300 transform hover:scale-105 hover:shadow-lg border border-portfolio-green/20 hover:border-portfolio-green/40"
               style={{
                 animationDelay: `${index * 150}ms`,
                 animation: "fadeInUp 0.6s ease-out forwards"
@@ -51,7 +56,7 @@ const Skills = () => {
                   <Badge
                     key={skill}
                     variant="secondary"
-                    className="bg-portfolio-green/10 text-portfolio-green border-portfolio-green/20 hover:bg-portfolio-green/20 transition-colors duration-300"
+                    className="bg-portfolio-green/15 text-portfolio-text border-portfolio-green/30 hover:bg-portfolio-green/25 hover:border-portfolio-green/50 transition-colors duration-300"
                   >
                     {skill}
                   </Badge>

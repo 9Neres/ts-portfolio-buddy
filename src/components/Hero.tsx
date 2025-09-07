@@ -1,76 +1,90 @@
-import { Github, Linkedin, Mail, Code, Cpu } from "lucide-react";
+import { Github, Linkedin, Mail, Code, Cpu, Instagram, Twitter } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Hero = () => {
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center bg-portfolio-dark">
-      <div className="container mx-auto px-4 py-20">
+    <section id="home" className="min-h-screen flex items-center justify-center bg-portfolio-dark relative overflow-hidden">
+      {/* Background Effect */}
+      <div className="absolute inset-0 bg-gradient-to-br from-portfolio-dark via-portfolio-darker to-portfolio-dark"></div>
+      <div className="absolute inset-0 bg-black/20"></div>
+      
+      <div className="container mx-auto px-4 py-20 relative z-10">
         <div className="text-center max-w-4xl mx-auto">
           {/* Logo/Icon */}
           <div className="mb-8 flex justify-center">
             <div className="relative">
-              <div className="w-24 h-24 bg-gradient-to-br from-portfolio-green to-portfolio-green-dark rounded-full flex items-center justify-center shadow-2xl">
+              <div className="w-24 h-24 bg-portfolio-card/80 backdrop-blur-sm border border-portfolio-green/20 rounded-2xl flex items-center justify-center shadow-2xl">
                 <div className="flex items-center space-x-1">
-                  <Code className="w-8 h-8 text-portfolio-dark" />
-                  <Cpu className="w-6 h-6 text-portfolio-dark" />
+                  <Code className="w-8 h-8 text-portfolio-green" />
+                  <Cpu className="w-6 h-6 text-portfolio-green" />
                 </div>
               </div>
-              <div className="absolute -inset-1 bg-gradient-to-br from-portfolio-green to-portfolio-green-dark rounded-full opacity-20 blur-lg"></div>
+              <div className="absolute -inset-1 bg-portfolio-green/10 rounded-2xl opacity-60 blur-lg"></div>
             </div>
           </div>
 
           {/* Name and Title */}
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-portfolio-text mb-4">
-            <span className="bg-gradient-to-r from-portfolio-text to-portfolio-green bg-clip-text text-transparent">
-              Seu Nome
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-portfolio-text mb-4 tracking-tight">
+            <span className="bg-gradient-to-r from-portfolio-text via-portfolio-text to-portfolio-green bg-clip-text text-transparent">
+              Ricardo Neres
             </span>
           </h1>
           
           <h2 className="text-xl md:text-2xl lg:text-3xl text-portfolio-green font-medium mb-8">
-            Desenvolvedor Full Stack
+            Desenvolvedor Back-end
           </h2>
 
           <p className="text-lg md:text-xl text-portfolio-text-muted mb-12 max-w-2xl mx-auto leading-relaxed">
-            Apaixonado por criar soluções digitais inovadoras e experiências de usuário excepcionais. 
-            Especializado em React, TypeScript e desenvolvimento de aplicações modernas.
+            Especialista em desenvolvimento back-end com experiência em Java, Spring Boot e tecnologias de nuvem. 
+            Focado em criar soluções robustas e escaláveis para sistemas corporativos.
           </p>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <Button
               size="lg"
-              className="bg-portfolio-green hover:bg-portfolio-green-dark text-portfolio-dark font-semibold px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-portfolio-green/25"
+              className="bg-portfolio-green/90 hover:bg-portfolio-green text-white font-semibold px-8 py-3 rounded-2xl transition-all duration-300 transform hover:scale-105 shadow-lg backdrop-blur-sm border border-portfolio-green/20"
             >
               Ver Projetos
             </Button>
             <Button
               variant="outline"
               size="lg"
-              className="border-portfolio-green text-portfolio-green hover:bg-portfolio-green hover:text-portfolio-dark font-semibold px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105"
+              className="border-portfolio-green/30 bg-portfolio-card/50 backdrop-blur-sm text-portfolio-text hover:bg-portfolio-green/20 hover:border-portfolio-green font-semibold px-8 py-3 rounded-2xl transition-all duration-300 transform hover:scale-105"
             >
               Download CV
             </Button>
           </div>
 
           {/* Social Links */}
-          <div className="flex justify-center space-x-6">
+          <div className="flex justify-center space-x-4">
             <a
               href="#"
-              className="w-12 h-12 bg-portfolio-card hover:bg-portfolio-card-hover rounded-full flex items-center justify-center text-portfolio-text hover:text-portfolio-green transition-all duration-300 transform hover:scale-110 hover:shadow-lg"
+              className="w-14 h-14 bg-portfolio-card/60 backdrop-blur-sm hover:bg-portfolio-card border border-portfolio-green/20 hover:border-portfolio-green/40 rounded-2xl flex items-center justify-center text-portfolio-text hover:text-portfolio-green transition-all duration-300 transform hover:scale-110 hover:shadow-lg"
+              aria-label="GitHub"
             >
-              <Github size={20} />
+              <Github size={22} />
             </a>
             <a
               href="#"
-              className="w-12 h-12 bg-portfolio-card hover:bg-portfolio-card-hover rounded-full flex items-center justify-center text-portfolio-text hover:text-portfolio-green transition-all duration-300 transform hover:scale-110 hover:shadow-lg"
+              className="w-14 h-14 bg-portfolio-card/60 backdrop-blur-sm hover:bg-portfolio-card border border-portfolio-green/20 hover:border-portfolio-green/40 rounded-2xl flex items-center justify-center text-portfolio-text hover:text-portfolio-green transition-all duration-300 transform hover:scale-110 hover:shadow-lg"
+              aria-label="LinkedIn"
             >
-              <Linkedin size={20} />
+              <Linkedin size={22} />
             </a>
             <a
               href="#"
-              className="w-12 h-12 bg-portfolio-card hover:bg-portfolio-card-hover rounded-full flex items-center justify-center text-portfolio-text hover:text-portfolio-green transition-all duration-300 transform hover:scale-110 hover:shadow-lg"
+              className="w-14 h-14 bg-portfolio-card/60 backdrop-blur-sm hover:bg-portfolio-card border border-portfolio-green/20 hover:border-portfolio-green/40 rounded-2xl flex items-center justify-center text-portfolio-text hover:text-portfolio-green transition-all duration-300 transform hover:scale-110 hover:shadow-lg"
+              aria-label="Instagram"
             >
-              <Mail size={20} />
+              <Instagram size={22} />
+            </a>
+            <a
+              href="#"
+              className="w-14 h-14 bg-portfolio-card/60 backdrop-blur-sm hover:bg-portfolio-card border border-portfolio-green/20 hover:border-portfolio-green/40 rounded-2xl flex items-center justify-center text-portfolio-text hover:text-portfolio-green transition-all duration-300 transform hover:scale-110 hover:shadow-lg"
+              aria-label="Twitter"
+            >
+              <Twitter size={22} />
             </a>
           </div>
         </div>

@@ -6,8 +6,9 @@ const Header = () => {
 
   const navItems = [
     { name: "Home", href: "#home" },
-    { name: "Sobre", href: "#sobre" },
     { name: "Habilidades", href: "#habilidades" },
+    { name: "Experiência", href: "#experiencia" },
+    { name: "Educação", href: "#educacao" },
     { name: "Projetos", href: "#projetos" },
     { name: "Contato", href: "#contato" },
   ];
@@ -21,11 +22,11 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 w-full bg-portfolio-dark/80 backdrop-blur-md border-b border-portfolio-card z-50">
+    <header className="fixed top-0 w-full bg-portfolio-dark/90 backdrop-blur-lg border-b border-portfolio-green/20 z-50">
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <div className="text-portfolio-green font-bold text-xl">
-            Portfolio
+          <div className="text-portfolio-green font-bold text-xl tracking-tight">
+            Ricardo.dev
           </div>
 
           {/* Desktop Navigation */}
