@@ -33,7 +33,7 @@ const Experience = () => {
                   </div>
                   <div className="flex items-center space-x-1">
                     <Calendar size={16} />
-                    <span>04/2024 - 09/2024</span>
+                    <span>04/2025 - 09/2025</span>
                   </div>
                 </div>
               </div>

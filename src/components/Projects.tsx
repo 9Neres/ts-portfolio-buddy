@@ -6,70 +6,48 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "E-commerce Platform",
-      description: "Plataforma completa de e-commerce com dashboard administrativo, pagamentos integrados e sistema de inventory.",
+      title: "PicPay simplificado",
+      description: "PicPay simplificado em Java, utilizando REST para as requisições. O sistema deve implementar regras de negócio com dois tipos de usuários diferentes, cada um com comportamentos distintos em relação aos métodos de pagamento.",
       image: "/api/placeholder/400/250",
-      technologies: ["React", "Node.js", "PostgreSQL", "Stripe"],
-      githubUrl: "#",
-      liveUrl: "#",
-      stars: 42,
-      forks: 12
+      technologies: ["Back-end","Java", "SpringBoot", "H2 database", "API Rest", "Insomnia", "Json"],
+      githubUrl: "https://github.com/9Neres/Challenger-PicPay",
+      liveUrl: "https://github.com/9Neres/Challenger-PicPay",
+      stars: 1,
+      forks: 0
     },
     {
       id: 2,
-      title: "Task Management App",
-      description: "Aplicativo de gerenciamento de tarefas com colaboração em tempo real e notificações push.",
+      title: "Spotify",
+      description: "Este é um projeto simples no qual coloquei em prática algumas animações em CSS, com o objetivo de aprimorar minhas habilidades como programador. Além disso, utilizei alguns comandos do NPM para configurar um JSON Server, simulando uma API simples que pude integrar ao front-end.",
       image: "/api/placeholder/400/250",
-      technologies: ["Next.js", "TypeScript", "Prisma", "Socket.io"],
-      githubUrl: "#",
-      liveUrl: "#",
-      stars: 28,
-      forks: 8
+      technologies: ["Front-end","JavaScript", "Css", "Html", "Node.js", "Json", "API Json"],
+      githubUrl: "https://github.com/9Neres/Spotify-web",
+      liveUrl: "https://github.com/9Neres/Spotify-web",
+      stars: 2,
+      forks: 0
     },
     {
       id: 3,
-      title: "Weather Dashboard",
-      description: "Dashboard interativo de previsão do tempo com gráficos e mapas integrados.",
+      title: "Cardapio restaurante - Back End",
+      description: "Este é um projeto de um sistema de cardápio digital com front-end e back-end. No front-end, o usuário pode visualizar os pratos, preços e categorias. No back-end, é possível cadastrar, editar e gerenciar os itens do cardápio por meio de uma API simples.",
       image: "/api/placeholder/400/250", 
-      technologies: ["React", "D3.js", "OpenWeather API", "Tailwind"],
-      githubUrl: "#",
-      liveUrl: "#",
-      stars: 35,
-      forks: 15
+      technologies: ["Back-end","Java", "SpringBoot","PostgreSQL", "Maven", "Postman"],
+      githubUrl: "https://github.com/9Neres/Back-end...ProjectCardapio",
+      liveUrl: "https://github.com/9Neres/Back-end...ProjectCardapio",
+      stars: 1,
+      forks: 0
     },
     {
       id: 4,
-      title: "Social Media API",
-      description: "API RESTful para rede social com autenticação JWT, upload de imagens e sistema de followers.",
-      image: "/api/placeholder/400/250",
-      technologies: ["Express", "MongoDB", "JWT", "Cloudinary"],
-      githubUrl: "#",
-      liveUrl: "#",
-      stars: 19,
-      forks: 6
+      title: "Cardapio restaurante - Front End",
+      description: "Este é um projeto de um sistema de cardápio digital com front-end e back-end. No front-end, o usuário pode visualizar os pratos, preços e categorias. No back-end, é possível cadastrar, editar e gerenciar os itens do cardápio por meio de uma API simples.",
+      image: "/api/placeholder/400/250", 
+      technologies: ["Front-end","TypeScript", "React","Vite", "Html", "Css"],
+      githubUrl: "https://github.com/9Neres/Front-end...ProjectCardapio",
+      liveUrl: "https://github.com/9Neres/Front-end...ProjectCardapio",
+      stars: 1,
+      forks: 0
     },
-    {
-      id: 5,
-      title: "Portfolio Website",
-      description: "Site portfolio responsivo com animações suaves e design moderno.",
-      image: "/api/placeholder/400/250",
-      technologies: ["React", "TypeScript", "Framer Motion", "Tailwind"],
-      githubUrl: "#",
-      liveUrl: "#",
-      stars: 67,
-      forks: 23
-    },
-    {
-      id: 6,
-      title: "Learning Platform",
-      description: "Plataforma de ensino online com videos, quizzes e progresso do usuário.",
-      image: "/api/placeholder/400/250",
-      technologies: ["Next.js", "Supabase", "Stripe", "Video.js"],
-      githubUrl: "#",
-      liveUrl: "#",
-      stars: 31,
-      forks: 9
-    }
   ];
 
   return (

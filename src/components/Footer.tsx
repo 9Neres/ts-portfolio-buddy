@@ -2,8 +2,8 @@ import { Github, Linkedin, Mail, Heart } from "lucide-react";
 
 const Footer = () => {
   const technologies = [
-    "React", "TypeScript", "Node.js", "Python", "PostgreSQL", 
-    "MongoDB", "AWS", "Docker", "Git", "Figma", "Next.js", "Tailwind CSS"
+    "React", "TypeScript", "Node.js", "Java", "SpringBoot", "PostgreSQL", 
+    "SQL", "Azure", "Docker", "Git", "Figma", "CloudFlare", "Maven"
   ];
 
   const currentYear = new Date().getFullYear();
@@ -44,7 +44,7 @@ const Footer = () => {
           
           <div className="flex justify-center space-x-6 mb-8">
             <a
-              href="mailto:seu.email@exemplo.com"
+              href="mailto:ricardoeborgescontact@gmail.com"
               className="flex items-center space-x-2 px-6 py-3 bg-portfolio-green hover:bg-portfolio-green-dark text-portfolio-dark font-semibold rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-portfolio-green/25"
             >
               <Mail size={20} />
@@ -55,21 +55,23 @@ const Footer = () => {
           {/* Social Links */}
           <div className="flex justify-center space-x-6">
             <a
-              href="#"
+              href="https://github.com/9Neres"
+              target="_blank"
               className="w-12 h-12 bg-portfolio-card hover:bg-portfolio-card-hover rounded-full flex items-center justify-center text-portfolio-text hover:text-portfolio-green transition-all duration-300 transform hover:scale-110 hover:shadow-lg"
               aria-label="GitHub"
             >
               <Github size={20} />
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/in/9neres/"
+              target="_blank"
               className="w-12 h-12 bg-portfolio-card hover:bg-portfolio-card-hover rounded-full flex items-center justify-center text-portfolio-text hover:text-portfolio-green transition-all duration-300 transform hover:scale-110 hover:shadow-lg"
               aria-label="LinkedIn"
             >
               <Linkedin size={20} />
             </a>
             <a
-              href="#"
+              href="mailto:ricardoeborgescontact@gmail.com"
               className="w-12 h-12 bg-portfolio-card hover:bg-portfolio-card-hover rounded-full flex items-center justify-center text-portfolio-text hover:text-portfolio-green transition-all duration-300 transform hover:scale-110 hover:shadow-lg"
               aria-label="Email"
             >
@@ -83,7 +85,7 @@ const Footer = () => {
           <p className="text-portfolio-text-muted flex items-center justify-center space-x-2">
             <span>&copy; {currentYear} Desenvolvido com</span>
             <Heart size={16} className="text-portfolio-green animate-pulse" />
-            <span>por Seu Nome</span>
+            <span>por Neres with Claude 4.1</span>
           </p>
         </div>
       </div>

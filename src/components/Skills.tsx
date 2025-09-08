@@ -34,7 +34,7 @@ const Skills = () => {
             <span className="text-portfolio-green"> Tecnologias</span>
           </h2>
           <p className="text-lg text-portfolio-text-muted max-w-2xl mx-auto">
-            Stack tecnológico e ferramentas utilizadas para desenvolvimento de soluções back-end robustas
+            Stack tecnológico e ferramentas utilizadas para desenvolvimento de soluções back-end
           </p>
         </div>
 
