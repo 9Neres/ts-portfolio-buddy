@@ -44,7 +44,7 @@ const Projects = () => {
       image: "/api/placeholder/400/250", 
       technologies: ["Front-end","TypeScript", "React","Vite", "Html", "Css"],
       githubUrl: "https://github.com/9Neres/Front-end...ProjectCardapio",
-      liveUrl: "https://github.com/9Neres/Front-end...ProjectCardapio",
+      liveUrl: "https://github.com/9Neres/Back-end...ProjectCardapio",
       stars: 1,
       forks: 0
     },
@@ -110,22 +110,42 @@ const Projects = () => {
                 </div>
 
                 <div className="flex space-x-2">
-                  <Button
-                    size="sm"
-                    variant="outline"
-                    className="flex-1 border-portfolio-green/50 text-portfolio-green hover:bg-portfolio-green hover:text-portfolio-dark transition-all duration-300"
-                  >
-                    <Github size={16} className="mr-2" />
-                    Código
-                  </Button>
-                  <Button
-                    size="sm"
-                    className="flex-1 bg-portfolio-green hover:bg-portfolio-green-dark text-portfolio-dark transition-all duration-300"
-                  >
-                    <ExternalLink size={16} className="mr-2" />
-                    Demo
-                  </Button>
-                </div>
+  <a
+    href={project.githubUrl}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex-1"
+  >
+    <Button
+      size="sm"
+      variant="outline"
+      className="w-full border-portfolio-green/50 text-portfolio-green hover:bg-portfolio-green hover:text-portfolio-dark transition-all duration-300"
+      asChild
+    >
+      <div className="flex items-center justify-center">
+        <Github size={16} className="mr-2" />
+        Código
+      </div>
+    </Button>
+  </a>
+  <a
+    href={project.liveUrl}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex-1"
+  >
+    <Button
+      size="sm"
+      className="w-full bg-portfolio-green hover:bg-portfolio-green-dark text-portfolio-dark transition-all duration-300"
+      asChild
+    >
+      <div className="flex items-center justify-center">
+        <ExternalLink size={16} className="mr-2" />
+        Demo
+      </div>
+    </Button>
+  </a>
+</div>
               </CardContent>
             </Card>
           ))}
